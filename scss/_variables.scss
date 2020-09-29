@@ -1,0 +1,28 @@
+$contentBackground: url("../img/header_background_v1.jpg");
+
+$minPageSize: 1024px;
+$articlePadding: 10px;
+
+$buttonsBackground: #01acac;
+$buttonsBackground-hover: #40acac;
+$articleBackground: #efefef;
+
+$captionsColor: #0097a7;
+
+@mixin btnStyle {
+  display: flex;
+  margin-left: auto;
+  width: fit-content;
+  padding: 10px 60px;
+  background: $buttonsBackground;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  font-weight: 400;
+  transition: 0.3s;
+
+  &:hover {
+    background: $buttonsBackground-hover;
+  }
+}
